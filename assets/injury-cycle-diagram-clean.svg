@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">ケガを繰り返す負のサイクル（三角形）</title>
+  <desc id="desc">3ステップが三角形に循環する負のサイクル図。動作分析で原因となる動きを見直す重要性を示す。</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbf8" />
+      <stop offset="100%" stop-color="#eaf3ee" />
+    </linearGradient>
+
+    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe2d8" />
+      <stop offset="100%" stop-color="#ffd2c4" />
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4d2" />
+      <stop offset="100%" stop-color="#ffe8b3" />
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffdfdf" />
+      <stop offset="100%" stop-color="#ffcaca" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#496354" flood-opacity="0.20"/>
+    </filter>
+
+    <marker id="arrowCycle" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#355246"/>
+    </marker>
+
+    <marker id="arrowDown" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#ff8a3d"/>
+    </marker>
+
+    <style>
+      .jp { font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; }
+      .ttl { font-size: 56px; font-weight: 700; fill: #1f342b; }
+      .stepnum { font-size: 28px; font-weight: 700; }
+      .steph { font-size: 30px; font-weight: 700; }
+      .line { font-size: 22px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
+  <text class="jp ttl" x="800" y="88" text-anchor="middle">ケガを繰り返す負のサイクル</text>
+
+  <!-- Step 1 -->
+  <rect x="110" y="220" width="470" height="230" rx="26" fill="url(#card1)" filter="url(#shadow)"/>
+  <text class="jp stepnum" x="345" y="274" text-anchor="middle" fill="#6a2e25">STEP 1</text>
+  <text class="jp steph" x="345" y="322" text-anchor="middle" fill="#6a2e25">痛みが出る</text>
+  <text class="jp line" x="345" y="372" text-anchor="middle" fill="#4f2a24">同じ部位を繰り返し痛める</text>
+  <text class="jp line" x="345" y="406" text-anchor="middle" fill="#4f2a24">別部位にも痛みが出ることがある</text>
+
+  <!-- Step 2 -->
+  <rect x="1020" y="220" width="470" height="230" rx="26" fill="url(#card2)" filter="url(#shadow)"/>
+  <text class="jp stepnum" x="1255" y="274" text-anchor="middle" fill="#6a531f">STEP 2</text>
+  <text class="jp steph" x="1255" y="322" text-anchor="middle" fill="#6a531f">その場しのぎのケア</text>
+  <text class="jp line" x="1255" y="372" text-anchor="middle" fill="#4f3f1b">ストレッチやマッサージ、</text>
+  <text class="jp line" x="1255" y="406" text-anchor="middle" fill="#4f3f1b">筋トレなどで一時的に緩和</text>
+
+  <!-- Step 3 -->
+  <rect x="510" y="495" width="580" height="280" rx="26" fill="url(#card3)" filter="url(#shadow)"/>
+  <text class="jp stepnum" x="800" y="552" text-anchor="middle" fill="#6a2323">STEP 3</text>
+  <text class="jp steph" x="800" y="600" text-anchor="middle" fill="#6a2323">負荷をかける動きの繰り返し</text>
+  <text class="jp line" x="800" y="648" text-anchor="middle" fill="#541f1f">原因となる動きが変わっていなければ、</text>
+  <text class="jp line" x="800" y="682" text-anchor="middle" fill="#541f1f">また同じように負荷をかけ続け、</text>
+  <text class="jp line" x="800" y="716" text-anchor="middle" fill="#541f1f">痛みを繰り返してしまうことに。</text>
+
+  <!-- Triangle arrows (smaller) -->
+  <path d="M610 205 C775 175, 930 175, 995 205" stroke="#355246" stroke-width="6" fill="none" marker-end="url(#arrowCycle)"/>
+  <path d="M1260 465 C1198 540, 1115 600, 1025 636" stroke="#355246" stroke-width="6" fill="none" marker-end="url(#arrowCycle)"/>
+  <path d="M575 636 C485 600, 402 540, 340 465" stroke="#355246" stroke-width="6" fill="none" marker-end="url(#arrowCycle)"/>
+
+  <!-- Breakout arrow -->
+  <path d="M800 790 L800 822" stroke="#ff8a3d" stroke-width="6" fill="none" marker-end="url(#arrowDown)"/>
+
+  <!-- Bottom message -->
+  <rect x="210" y="836" width="1180" height="60" rx="16" fill="#FF8A3D" opacity="1"/>
+  <text class="jp" x="800" y="874" text-anchor="middle" dominant-baseline="middle" font-size="36" font-weight="700" fill="#FFFFFF">原因となりうる動きを見直すことが重要！</text>
+</svg>
