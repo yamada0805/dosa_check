@@ -706,6 +706,28 @@ p {
   box-shadow: var(--shadow-md);
 }
 
+.support-bridge {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(205, 222, 213, 0.95);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.support-bridge h3 {
+  margin-bottom: 8px;
+}
+
+.support-bridge p {
+  margin-bottom: 8px;
+}
+
+.support-bridge__link {
+  color: var(--primary);
+  font-weight: 800;
+  text-underline-offset: 2px;
+}
+
 .price {
   color: var(--primary-deep);
   font-size: 1.62rem;
@@ -858,6 +880,37 @@ p {
   font-weight: 700;
 }
 
+.menu-card {
+  margin-top: 14px;
+}
+
+.menu-group {
+  margin-top: 16px;
+}
+
+.menu-group__lead {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #d97722;
+}
+
+.menu-group--sub .menu-group__lead {
+  margin-top: 8px;
+  color: var(--primary-deep);
+}
+
+.menu-card h2 {
+  font-size: clamp(1.2rem, 3.6vw, 1.52rem);
+}
+
+.menu-price {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--primary-deep);
+}
+
 @media (max-width: 767px) {
   .container {
     width: min(100% - 24px, var(--container));
@@ -968,6 +1021,18 @@ p {
   .closing h3 {
     margin-top: 22px;
     margin-bottom: 12px;
+  }
+
+  .support-bridge {
+    padding: 14px;
+  }
+
+  .menu-price {
+    font-size: 1.18rem;
+  }
+
+  .menu-group__lead {
+    font-size: 0.9rem;
   }
 }
 
