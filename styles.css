@@ -299,33 +299,28 @@ a {
 }
 
 .hero__content {
-  width: min(100%, 680px);
+  width: min(100%, 700px);
   padding: 0;
 }
 
-.hero-target {
-  display: inline-block;
-  margin: 4px 0 12px;
-  padding: 6px 11px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 214, 175, 0.5);
-  background: rgba(8, 28, 21, 0.36);
-  color: #ffe6ca;
-  font-size: 0.84rem;
-  font-weight: 800;
+.hero-main {
+  margin: 0 0 16px;
+  font-size: clamp(2.05rem, 6.5vw, 3.75rem);
+  font-weight: 900;
+  line-height: 1.18;
+  letter-spacing: 0.004em;
+  color: #ffffff;
+  text-wrap: balance;
 }
 
-.hero-hooks {
-  margin: 6px 0 0;
-  padding-left: 18px;
-  color: rgba(241, 247, 255, 0.95);
-  display: grid;
-  gap: 6px;
-}
-
-.hero-hooks li {
-  font-size: 0.95rem;
-  line-height: 1.65;
+.hero-sub {
+  margin: 0;
+  color: rgba(233, 246, 238, 0.92);
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.72;
+  max-width: 44ch;
+  text-align: left;
 }
 
 .label {
@@ -438,10 +433,16 @@ p {
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
+  align-items: stretch;
 }
 
 .cta-group--center {
   justify-content: center;
+  align-items: center;
+}
+
+.hero .cta-group {
+  align-items: flex-start;
 }
 
 .btn {
@@ -1160,13 +1161,15 @@ p {
     font-size: 1rem;
   }
 
-  .hero-hooks {
-    gap: 5px;
+  .hero-main {
+    font-size: clamp(1.78rem, 8.3vw, 2.22rem);
+    margin-bottom: 12px;
   }
 
-  .hero-hooks li {
+  .hero-sub {
     font-size: 0.9rem;
-    line-height: 1.62;
+    line-height: 1.68;
+    max-width: 100%;
   }
 
   .btn {
