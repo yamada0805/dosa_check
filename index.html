@@ -15,8 +15,19 @@
       property="og:description"
       content="痛みの根本原因となりうる身体の使い方を分析し、改善方法をお伝えします。"
     />
-    <meta property="og:image" content="assets/optimized/fv-main.jpg" />
+    <meta property="og:image" content="https://yamada0805.github.io/dosa_check/assets/design/ogp-card.svg" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN" />
+    <link rel="icon" href="assets/design/favicon.svg" type="image/svg+xml" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +43,7 @@
       <div class="container hero__layout">
         <div class="hero__content">
           <h1>繰り返す痛みの原因、<br />動作分析で明らかに。</h1>
+          <p class="hero-target">同じ痛みを繰り返すランナー向け</p>
           <p class="lead">痛みの根本原因となりうる身体の使い方を分析し、改善方法をお伝えします。</p>
           <div class="cta-group" aria-label="メインCTA">
             <a class="btn btn--primary" href="https://lin.ee/tjPDQay">LINE登録して痛みの原因を知る</a>
@@ -187,6 +199,11 @@
                 <p class="trainer-card__role">理学療法士 / 連動性トレーナー</p>
               </div>
             </div>
+            <div class="trainer-highlights">
+              <p><strong>実績</strong> パラリンピック日本代表選手・箱根駅伝出場ランナーサポート</p>
+              <p><strong>資格</strong> 理学療法士（国家資格）/ 連動性トレーナー</p>
+              <p><strong>自己ベスト</strong> フルマラソン 2時間53分20秒</p>
+            </div>
 
             <p>
               「同じ痛みを繰り返してしまう」<br />
@@ -210,8 +227,6 @@
             </p>
 
             <p>なんとなくの対策ではなく、あなたの動きに合わせた“次の一歩”を一緒に整理していきましょう。</p>
-
-            <p><strong>サポート実績</strong><br />パラリンピック（リオ・東京・パリ）日本代表選手<br />箱根駅伝出場ランナー<br />マスターズ陸上 日本記録保持者</p>
 
             <details class="profile-toggle profile-toggle--card">
               <summary>プロフィール詳細</summary>
@@ -269,9 +284,11 @@
           <div class="price-card price-card--recommended">
             <h3>痛みの原因分析セッション（オンライン）</h3>
             <p class="price">1,500円（税込）</p>
-            <p><strong>時間：</strong>50分</p>
-            <p><strong>形式：</strong>Zoom</p>
-            <p><strong>定員：</strong>毎月10名</p>
+            <div class="pricing-meta-grid">
+              <p class="pricing-meta-card"><span>時間</span>50分</p>
+              <p class="pricing-meta-card"><span>形式</span>Zoom</p>
+              <p class="pricing-meta-card"><span>定員</span>毎月10名</p>
+            </div>
             <h3>セッション内容</h3>
             <ul>
               <li>事前アンケート／フォーム動画の確認</li>
@@ -280,19 +297,21 @@
               <li>分析結果のフィードバック</li>
               <li>改善に向けたエクササイズ提案</li>
             </ul>
-            <h3>キャンセル・日程変更</h3>
-            <ul>
-              <li>日程変更：前日23:59まで無料で可能（1回まで）</li>
-              <li>キャンセル：前日23:59まで無料、当日キャンセル・無断キャンセルは100%</li>
-              <li>返金：キャンセル料・振込手数料を差し引いて返金します</li>
-            </ul>
+            <details class="policy-toggle">
+              <summary>キャンセル規定を見る</summary>
+              <ul>
+                <li>日程変更：前日23:59まで無料で可能（1回まで）</li>
+                <li>キャンセル：前日23:59まで無料、当日キャンセル・無断キャンセルは100%</li>
+                <li>返金：キャンセル料・振込手数料を差し引いて返金します</li>
+              </ul>
+            </details>
             <p class="note">※毎月の受付枠には上限があります。満枠の場合は翌月のご案内となります。</p>
             <p class="note">※本サービスは医療診断・治療を目的としたものではありません。</p>
           </div>
           <div class="support-bridge">
             <h3>受講後のサポートについて</h3>
             <p>痛みの原因分析セッション受講後、必要な方には初回体験セッションや継続サポートをご案内しています。</p>
-            <p><a class="support-bridge__link" href="services.html">受講後サポートの詳細を見る</a></p>
+            <p><a class="support-bridge__link" href="services.html">受講後サポートの内容と料金を見る</a></p>
           </div>
         </div>
       </section>
@@ -348,6 +367,11 @@
             繰り返す痛みの原因を、動作分析で明らかに。<br />
             「なんとなくの対策」ではなく、あなたの動きに起きていることを整理し、見直すべきポイントをはっきりさせます。
           </p>
+          <ul class="closing-summary">
+            <li><strong>このセッションでわかること：</strong>痛みにつながる可能性がある動きのクセと見直しポイント</li>
+            <li><strong>こんな方におすすめ：</strong>同じ部位の痛みを繰り返し、何を見直すべきか迷っている方</li>
+            <li><strong>料金・時間：</strong>1,500円（税込） / 50分（オンライン）</li>
+          </ul>
           <p>まずは「痛みの原因分析セッション」へ。次の一歩を、ここから一緒に作っていきましょう。</p>
           <h3>LINE登録後の流れ</h3>
           <ol class="step-list">
