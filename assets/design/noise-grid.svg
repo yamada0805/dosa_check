@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="grid">
+  <rect width="220" height="220" fill="transparent" />
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 0.5H220" />
+    <path d="M0 55.5H220" />
+    <path d="M0 110.5H220" />
+    <path d="M0 165.5H220" />
+    <path d="M0.5 0V220" />
+    <path d="M55.5 0V220" />
+    <path d="M110.5 0V220" />
+    <path d="M165.5 0V220" />
+  </g>
+  <g fill="#ffffff" fill-opacity="0.08">
+    <circle cx="22" cy="38" r="1.2" />
+    <circle cx="94" cy="18" r="1.2" />
+    <circle cx="171" cy="42" r="1.2" />
+    <circle cx="63" cy="102" r="1.2" />
+    <circle cx="146" cy="89" r="1.2" />
+    <circle cx="200" cy="114" r="1.2" />
+    <circle cx="28" cy="164" r="1.2" />
+    <circle cx="109" cy="186" r="1.2" />
+    <circle cx="184" cy="170" r="1.2" />
+  </g>
+</svg>

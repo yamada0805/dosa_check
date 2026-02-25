@@ -267,6 +267,18 @@ a {
     radial-gradient(800px 360px at 85% 15%, rgba(255, 138, 61, 0.3), transparent 68%),
     url("assets/optimized/fv-main.jpg") center 22% / cover no-repeat;
   border-bottom: 1px solid rgba(207, 224, 213, 0.75);
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 18, 14, 0.12), rgba(7, 18, 14, 0.28)),
+    url("assets/design/noise-grid.svg") center / 220px 220px repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .hero__layout {
@@ -321,13 +333,13 @@ h2,
 h3 {
   margin: 0 0 12px;
   line-height: 1.34;
-  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 }
 
 h1 {
   font-size: clamp(2rem, 6.1vw, 3.5rem);
-  font-weight: 900;
-  letter-spacing: 0.01em;
+  font-weight: 800;
+  letter-spacing: 0.005em;
   color: #fff;
 }
 
@@ -336,6 +348,19 @@ h2 {
   font-weight: 800;
   position: relative;
   padding-bottom: 14px;
+  letter-spacing: 0.003em;
+}
+
+.section-label {
+  margin: 0 0 8px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: #d97722;
+}
+
+.section-label--on-dark {
+  color: #ffd6ad;
 }
 
 h2::after {
@@ -351,7 +376,8 @@ h2::after {
 
 h3 {
   font-size: clamp(1.1rem, 3.5vw, 1.32rem);
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.002em;
 }
 
 .mini-head {
@@ -360,7 +386,7 @@ h3 {
 }
 
 p {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 }
 
 .lead {
@@ -419,10 +445,10 @@ p {
 
 .check-list {
   list-style: none;
-  margin: 18px 0;
+  margin: 22px 0;
   padding: 0;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .check-list li {
@@ -471,7 +497,7 @@ p {
 .faq-item {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 18px;
   box-shadow: var(--shadow-sm);
 }
 
@@ -483,7 +509,7 @@ p {
 
 .card,
 .price-card {
-  padding: 20px;
+  padding: 24px;
 }
 
 .card {
@@ -519,7 +545,7 @@ p {
 .service-stack {
   margin-top: 14px;
   display: grid;
-  gap: 26px;
+  gap: 32px;
 }
 
 .service-block {
@@ -617,7 +643,7 @@ p {
 
 .benefits {
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 
 .benefits .card:nth-child(1) {
@@ -739,10 +765,11 @@ p {
 
 .support-bridge {
   margin-top: 16px;
-  padding: 16px;
-  border-radius: 14px;
+  padding: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(205, 222, 213, 0.95);
   background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 20px rgba(18, 49, 38, 0.06);
 }
 
 .support-bridge h3 {
@@ -829,7 +856,7 @@ p {
 
 .faq-list {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   margin-top: 12px;
 }
 
@@ -1262,8 +1289,9 @@ p {
   .price-card:hover,
   .faq-item:hover,
   .diagram-box:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 34px rgba(18, 49, 38, 0.12);
+    border-color: rgba(224, 143, 74, 0.55);
   }
 
   .mobile-fixed-cta {
