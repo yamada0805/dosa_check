@@ -76,11 +76,11 @@ a {
 }
 
 .section {
-  padding: 72px 0;
+  padding: 86px 0;
 }
 
 .section + .section {
-  padding-top: 84px;
+  padding-top: 104px;
 }
 
 .section--alt {
@@ -261,10 +261,10 @@ a {
 
 .hero {
   position: relative;
-  padding: 90px 0 74px;
+  padding: 104px 0 84px;
   background:
     linear-gradient(110deg, rgba(9, 25, 19, 0.72) 0%, rgba(14, 38, 29, 0.58) 45%, rgba(20, 54, 41, 0.3) 100%),
-    radial-gradient(800px 360px at 85% 15%, rgba(255, 138, 61, 0.3), transparent 68%),
+    radial-gradient(800px 360px at 85% 15%, rgba(255, 138, 61, 0.26), transparent 68%),
     url("assets/optimized/fv-main.jpg") center 22% / cover no-repeat;
   border-bottom: 1px solid rgba(207, 224, 213, 0.75);
   isolation: isolate;
@@ -281,6 +281,19 @@ a {
   z-index: -1;
 }
 
+.concept-line {
+  margin: 0 0 12px;
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #e9f7ef;
+  background: rgba(10, 34, 26, 0.48);
+  border: 1px solid rgba(171, 226, 201, 0.45);
+}
+
 .hero__layout {
   display: block;
 }
@@ -292,14 +305,27 @@ a {
 
 .hero-target {
   display: inline-block;
-  margin: 0 0 10px;
-  padding: 5px 10px;
+  margin: 4px 0 12px;
+  padding: 6px 11px;
   border-radius: 999px;
   border: 1px solid rgba(255, 214, 175, 0.5);
   background: rgba(8, 28, 21, 0.36);
   color: #ffe6ca;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 800;
+}
+
+.hero-hooks {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: rgba(241, 247, 255, 0.95);
+  display: grid;
+  gap: 6px;
+}
+
+.hero-hooks li {
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 .label {
@@ -390,7 +416,7 @@ p {
 }
 
 .lead {
-  color: rgba(244, 251, 247, 0.94);
+  color: rgba(243, 248, 255, 0.94);
   font-size: 1.08rem;
   font-weight: 500;
 }
@@ -410,6 +436,10 @@ p {
   flex-direction: column;
   gap: 10px;
   margin-top: 16px;
+}
+
+.cta-group--center {
+  justify-content: center;
 }
 
 .btn {
@@ -443,32 +473,49 @@ p {
   transform: translateY(-1px);
 }
 
+.section-cta {
+  margin-top: 22px;
+}
+
 .check-list {
   list-style: none;
-  margin: 22px 0;
+  margin: 24px 0 28px;
   padding: 0;
   display: grid;
-  gap: 12px;
+  gap: 14px;
+  justify-items: center;
 }
 
 .check-list li {
   position: relative;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 11px 12px 11px 36px;
-  box-shadow: 0 3px 10px rgba(14, 41, 31, 0.05);
+  padding: 0 0 0 34px;
+  color: #4a4f4d;
+  font-size: clamp(1.03rem, 3.6vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  width: min(100%, 620px);
 }
 
 .check-list li::before {
-  content: "";
+  content: "✓";
   position: absolute;
-  left: 12px;
-  top: 18px;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--accent);
+  left: 0;
+  top: 0;
+  color: #1e6f59;
+  font-weight: 900;
+  font-size: 1.04em;
+}
+
+.problem-flow {
+  margin: 10px 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.problem-flow img {
+  width: 110px;
+  height: auto;
+  border-radius: 0;
 }
 
 .content-grid,
@@ -543,9 +590,9 @@ p {
 }
 
 .service-stack {
-  margin-top: 14px;
+  margin-top: 18px;
   display: grid;
-  gap: 32px;
+  gap: 38px;
 }
 
 .service-block {
@@ -641,6 +688,7 @@ p {
 }
 
 
+.contrast-grid,
 .benefits {
   display: grid;
   gap: 16px;
@@ -1050,23 +1098,23 @@ p {
 
 @media (max-width: 767px) {
   .container {
-    width: min(100% - 24px, var(--container));
+    width: min(100% - 36px, var(--container));
   }
 
   .narrow {
-    width: min(100% - 24px, 860px);
+    width: min(100% - 36px, 860px);
   }
 
   .section {
-    padding: 60px 0;
+    padding: 68px 0;
   }
 
   .section + .section {
-    padding-top: 68px;
+    padding-top: 80px;
   }
 
   .hero {
-    padding: 76px 0 62px;
+    padding: 88px 0 68px;
   }
 
   .cause-intro {
@@ -1093,10 +1141,30 @@ p {
     font-size: 0.97rem;
     line-height: 1.75;
     margin-bottom: 10px;
+    max-width: 38ch;
+  }
+
+  .hero__content,
+  .service-block,
+  .card,
+  .price-card,
+  .trainer-card,
+  .faq-item,
+  .support-bridge {
+    max-width: 100%;
   }
 
   .lead {
     font-size: 1rem;
+  }
+
+  .hero-hooks {
+    gap: 5px;
+  }
+
+  .hero-hooks li {
+    font-size: 0.9rem;
+    line-height: 1.62;
   }
 
   .btn {
@@ -1105,16 +1173,13 @@ p {
   }
 
   .check-list {
-    margin: 14px 0;
-    gap: 8px;
+    margin: 18px 0 22px;
+    gap: 10px;
   }
 
   .check-list li {
-    padding: 10px 11px 10px 34px;
-  }
-
-  .check-list li::before {
-    top: 16px;
+    padding-left: 30px;
+    font-size: 0.98rem;
   }
 
   .trainer-card {
@@ -1130,7 +1195,11 @@ p {
   }
 
   .service-stack {
-    gap: 22px;
+    gap: 26px;
+  }
+
+  .problem-flow img {
+    width: 92px;
   }
 
   .service-block h3 {
@@ -1268,6 +1337,10 @@ p {
   }
 
   .benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contrast-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
