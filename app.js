@@ -20,3 +20,15 @@ faqButtons.forEach((button) => {
     }
   });
 });
+
+const fixedCta = document.querySelector('.mobile-fixed-cta');
+const toggleFixedCta = () => {
+  if (!fixedCta) return;
+  const shouldShow = window.scrollY > 520;
+  fixedCta.classList.toggle('is-visible', shouldShow);
+};
+
+window.addEventListener('scroll', toggleFixedCta, { passive: true });
+window.addEventListener('resize', toggleFixedCta);
+window.addEventListener('load', toggleFixedCta);
+toggleFixedCta();

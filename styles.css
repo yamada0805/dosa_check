@@ -76,11 +76,11 @@ a {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 82px 0;
 }
 
 .section + .section {
-  padding-top: 114px;
+  padding-top: 94px;
 }
 
 .section--alt {
@@ -581,6 +581,10 @@ p {
   overflow: hidden;
 }
 
+.card p {
+  margin-bottom: 0;
+}
+
 .card::before {
   content: "";
   position: absolute;
@@ -794,8 +798,16 @@ p {
 
 .case-grid {
   display: grid;
-  gap: 42px;
+  gap: 34px;
   margin-top: 16px;
+}
+
+.case-group-label {
+  margin: 6px 0 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #355046;
+  letter-spacing: 0.03em;
 }
 
 .case-card {
@@ -1043,6 +1055,16 @@ p {
   border-top: 1px solid var(--line);
   backdrop-filter: blur(10px);
   z-index: 50;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-fixed-cta.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .mobile-fixed-cta .btn {
@@ -1123,11 +1145,11 @@ p {
   }
 
   .section {
-    padding: 74px 0;
+    padding: 58px 0;
   }
 
   .section + .section {
-    padding-top: 90px;
+    padding-top: 64px;
   }
 
   .hero {
@@ -1158,7 +1180,6 @@ p {
     font-size: 0.97rem;
     line-height: 1.82;
     margin-bottom: 14px;
-    max-width: 38ch;
   }
 
   .hero__content,
@@ -1227,7 +1248,7 @@ p {
   }
 
   .service-stack {
-    gap: 32px;
+    gap: 24px;
   }
 
   .problem-flow img {
@@ -1243,11 +1264,11 @@ p {
   }
 
   .case-grid {
-    gap: 36px;
+    gap: 24px;
   }
 
   .faq-list {
-    gap: 12px;
+    gap: 10px;
   }
 
   .faq-question {
@@ -1259,6 +1280,17 @@ p {
     font-size: 0.94rem;
     line-height: 1.78;
     padding: 0 15px 15px;
+  }
+
+  .card,
+  .price-card {
+    padding: 22px;
+  }
+
+  .case-group-label {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 0.83rem;
   }
 
   .pricing-meta-grid {
