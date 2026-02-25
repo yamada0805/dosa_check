@@ -261,7 +261,7 @@ a {
 
 .hero {
   position: relative;
-  padding: 104px 0 84px;
+  padding: 96px 0 78px;
   background:
     linear-gradient(110deg, rgba(9, 25, 19, 0.72) 0%, rgba(14, 38, 29, 0.58) 45%, rgba(20, 54, 41, 0.3) 100%),
     radial-gradient(800px 360px at 85% 15%, rgba(255, 138, 61, 0.26), transparent 68%),
@@ -299,7 +299,7 @@ a {
 }
 
 .hero__content {
-  width: min(100%, 760px);
+  width: min(100%, 680px);
   padding: 0;
 }
 
@@ -417,8 +417,9 @@ p {
 
 .lead {
   color: rgba(243, 248, 255, 0.94);
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   font-weight: 500;
+  margin-bottom: 18px;
 }
 
 .note {
@@ -1114,7 +1115,7 @@ p {
   }
 
   .hero {
-    padding: 88px 0 68px;
+    padding: 82px 0 62px;
   }
 
   .cause-intro {
